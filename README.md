@@ -69,3 +69,26 @@ com.project2.auth_api
 │   ├── ProdutoService
 │   └── UserService
 └── AuthApiApplication   # Classe principal da aplicação
+```
+## 🧪 **Principais Endpoints**
+
+### **Usuários**
+- `GET /users`: Lista todos os usuários.
+- `POST /users`: Cadastra um novo usuário.
+- `GET /users/{id}`: Consulta um usuário pelo ID.
+- `PUT /users/{id}`: Atualiza informações de um usuário.
+- `DELETE /users/{id}`: Remove um usuário.
+
+### **Pedidos**
+- `GET /pedidos`: Lista todos os pedidos.
+- `POST /pedidos`: Cria um novo pedido.
+- `GET /pedidos/user/{userId}`: Lista pedidos de um usuário específico.
+- `PUT /pedidos/{id}`: Atualiza um pedido.
+- `DELETE /pedidos/{id}`: Remove um pedido.
+
+### **Produtos**
+- `GET /produtos`: Lista todos os produtos.
+- `POST /produtos`: Cadastra um novo produto.
+- `GET /produtos/pedido/{pedidoId}`: Lista produtos vinculados a um pedido.
+- `PUT /produtos/{id}`: Atualiza um produto.
+- `DELETE /produtos/{id}`: Remove um produto.
